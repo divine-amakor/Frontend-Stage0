@@ -1,0 +1,114 @@
+:root {
+  --bg-color: #f9fafb;
+  --card-bg: #ffffff;
+  --primary-color: #2563eb;
+  --text-color: #1f2937;
+  --border-radius: 16px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.avatar-container {
+  margin: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.profile-info h2 {
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.social-links a:focus,
+.social-links a:hover {
+  text-decoration: underline;
+  outline: none;
+}
+
+section {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.25rem 0;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Layout */
+@media (min-width: 700px) {
+  .profile-header {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .avatar-container {
+    margin-right: 1rem;
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}

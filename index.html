@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-header">
+        <figure class="avatar-container">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="User avatar"
+            class="avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <div class="profile-info">
+          <h2 data-testid="test-user-name">Amakor Divine</h2>
+          <p data-testid="test-user-bio">
+            Final-year Industrial Mathematics and Computer Science student
+            passionate about AI, finance, and technology.
+          </p>
+          <p class="time">
+            Current Time (ms):
+            <span id="user-time" data-testid="test-user-time"></span>
+          </p>
+        </div>
+      </header>
+
+      <nav aria-label="Social Links">
+        <ul class="social-links" data-testid="test-user-social-links">
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="hobbies-section">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Photography</li>
+          <li>Reading tech blogs</li>
+        </ul>
+      </section>
+
+      <section class="dislikes-section">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Procrastination</li>
+          <li>Spam emails</li>
+          <li>Unclear documentation</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
