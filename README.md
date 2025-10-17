@@ -1,4 +1,4 @@
-# Profile Card Component
+# Frontend-Stage0: Profile Card Component
 
 A simple, accessible, and responsive **Profile Card** built using **semantic HTML**, **modern CSS**, and **vanilla JavaScript**. The card displays user details such as name, biography, current time in milliseconds, avatar, social links, hobbies, and dislikes. Each visible element includes a `data-testid` attribute for automated testing.
 
@@ -18,7 +18,7 @@ A simple, accessible, and responsive **Profile Card** built using **semantic HTM
 ## 🧱 Project Structure
 
 ```bash
-profile-card/
+Frontend-Stage0/
 ├── index.html      # Main HTML file
 ├── style.css       # Styling and layout
 └── script.js       # JavaScript logic (time updater)
@@ -49,12 +49,12 @@ Follow these steps to run the project on your local machine:
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/profile-card.git
+git clone https://github.com/<your-username>/Frontend-Stage0.git
 ```
 
 ### 2️⃣ Navigate into the project folder
 ```bash
-cd profile-card
+cd Frontend-Stage0
 ```
 
 ### 3️⃣ Open in your browser
