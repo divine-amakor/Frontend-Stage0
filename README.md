@@ -1,14 +1,16 @@
-# Frontend-Stage0: Profile Card Component
+# Frontend-Stage0: Multi-Page Web Application
 
-A simple, accessible, and responsive **Profile Card** built using **semantic HTML**, **modern CSS**, and **vanilla JavaScript**. The card displays user details such as name, biography, current time in milliseconds, avatar, social links, hobbies, and dislikes. Each visible element includes a `data-testid` attribute for automated testing.
+A **multi-page web application** featuring a profile card, contact form, and about page. Built with **semantic HTML**, **modern CSS**, and **vanilla JavaScript** with full accessibility and responsive design.
 
 ---
 
 ## 🚀 Features
 
+- Multi-page navigation system
 - Fully semantic HTML structure
 - Responsive layout (mobile, tablet, desktop)
 - Accessibility-friendly (proper alt text, focus states, and keyboard navigation)
+- Contact form with client-side validation
 - Live display of current time in milliseconds (auto-updates every second)
 - Clean design with modern CSS (Flexbox layout)
 - `data-testid` attributes for automated test targeting
@@ -19,16 +21,39 @@ A simple, accessible, and responsive **Profile Card** built using **semantic HTM
 
 ```bash
 Frontend-Stage0/
-├── index.html      # Main HTML file
+├── index.html      # Profile card page
+├── contact.html    # Contact form page
+├── about.html      # About me page
 ├── style.css       # Styling and layout
-└── script.js       # JavaScript logic (time updater)
+├── script.js       # JavaScript logic (time updater)
+└── contact.js      # Form validation logic
 ```
+
+---
+
+## 🔄 Frontend-Stage1 Updates
+
+### New Pages Added:
+- **Contact Us Page** (`contact.html`) - Form with validation for name, email, subject, and message
+- **About Me Page** (`about.html`) - Personal reflections and program goals
+
+### Enhanced Features:
+- **Navigation System** - Seamless navigation between all pages
+- **Form Validation** - Real-time validation with error messages and success feedback
+- **Accessibility Improvements** - ARIA associations, proper labeling, and keyboard navigation
+- **Responsive Design** - All pages optimized for mobile, tablet, and desktop
+
+### Technical Improvements:
+- Added `contact.js` for form validation logic
+- Enhanced CSS with form styling and responsive breakpoints
+- Implemented semantic HTML structure across all pages
 
 ---
 
 ## 🧩 Required Test IDs
 All visible elements contain stable test IDs for automated tests:
 
+### Profile Page
 | Element | data-testid |
 |----------|--------------|
 | Profile card container | `test-profile-card` |
@@ -40,6 +65,27 @@ All visible elements contain stable test IDs for automated tests:
 | Individual social links | `test-user-social-<network>` |
 | Hobbies list | `test-user-hobbies` |
 | Dislikes list | `test-user-dislikes` |
+
+### Contact Page
+| Element | data-testid |
+|----------|--------------|
+| Full name input | `test-contact-name` |
+| Email input | `test-contact-email` |
+| Subject input | `test-contact-subject` |
+| Message textarea | `test-contact-message` |
+| Submit button | `test-contact-submit` |
+| Error messages | `test-contact-error-<field>` |
+| Success message | `test-contact-success` |
+
+### About Page
+| Element | data-testid |
+|----------|--------------|
+| About page container | `test-about-page` |
+| Biography section | `test-about-bio` |
+| Goals section | `test-about-goals` |
+| Confidence section | `test-about-confidence` |
+| Future note section | `test-about-future-note` |
+| Extra thoughts section | `test-about-extra` |
 
 ---
 
